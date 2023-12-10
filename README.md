@@ -104,11 +104,11 @@ model.
 
 #### `OGPTRun edit_with_instructions`
 `OGPTRun edit_with_instructions` command which opens interactive window to edit selected text or
-whole window using the `deepseek-coder:6.7b` model, you can change in this in your config options
+whole window using the 'neural-chat:7b` model, you can change in this in your config options
 
 #### `OGPTRun edit_code_with_instructions`
 This command opens an interactive window to edit selected text or the entire window using the
-`deepseek-coder:6.7b` model. You can modify this in your config options. The Ollama response will
+`neural-chat:7b` model. You can modify this in your config options. The Ollama response will
 be extracted for its code content, and if it doesn't contain any codeblock, it will default back to
 the full response.
 
