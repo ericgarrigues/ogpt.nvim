@@ -165,7 +165,7 @@ function M.defaults()
     ]],
           strategy = "display",
           params = {
-            model = "deepseek-coder:6.7b",
+            model = "neural-chat:7b",
           },
         },
       },
@@ -176,7 +176,7 @@ function M.defaults()
           strategy = "edit_code",
           delay = true,
           params = {
-            model = "deepseek-coder:6.7b",
+            model = "neural-chat:7b",
           },
         },
       },
