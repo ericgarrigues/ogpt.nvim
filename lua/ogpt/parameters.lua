@@ -210,11 +210,16 @@ M.refresh_panel = function()
   local details = {}
   for _, key in pairs(params_order) do
     if M.params[key] ~= nil then
-      local vt = {
-        { Config.options.parameters_window.setting_sign .. key .. ": ", "ErrorMsg" },
-        { M.params[key] .. "", "Identifier" },
-      }
-      table.insert(details, vt)
+      -- print(type(M.params[key]), '\n')
+      if type(M.params[key]) ~= 'table' then
+        -- print(table.concat(M.params[key], '\n'))
+      -- else
+        local vt = {
+          { Config.options.parameters_window.setting_sign .. key .. ": ", "ErrorMsg" },
+          { M.params[key] .. "", "Identifier" },
+        }
+        table.insert(details, vt)
+      end
     end
   end
 
