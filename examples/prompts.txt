@@ -1,0 +1,10 @@
+Prompt for "IT Ansible Devops" role :
+
+We need to deploy apache service on an ansible group https_servers. This apache servers need to be installed as docker containers using the ansible docker module. The playbook need to be compatible with ansible 2.10.
+
+Prompt for "Web Design Consultant" role :
+
+Write HTML code for a webpage that has a single button. When the button is pressed, it will change the background color of he website to a random color.
+The button press will also display a random joke. Put the button in the center of the page.
+
+
