@@ -140,12 +140,12 @@ function M.defaults()
       },
     },
     api_params = {
-      model = "mistral:7b",
+      model = "neural-chat:7b",
       temperature = 0.8,
       top_p = 1,
     },
     api_edit_params = {
-      model = "mistral:7b",
+      model = "neural-chat:7b",
       frequency_penalty = 0,
       presence_penalty = 0,
       temperature = 0.5,
@@ -187,7 +187,7 @@ function M.defaults()
           strategy = "edit",
           delay = true,
           params = {
-            model = "mistral:7b",
+            model = "neural-chat:7b",
           },
         },
       },

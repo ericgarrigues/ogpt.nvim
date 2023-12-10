@@ -1,6 +1,6 @@
 -- ChatAction that can be used for actions of type "chat" in actions.json
 --
--- This enables the use of mistral:7b in user defined actions,
+-- This enables the use of neural-chat:7b in user defined actions,
 -- as this model only defines the chat endpoint and has no completions endpoint
 --
 -- Example action for your local actions.json:
@@ -10,7 +10,7 @@
 --     "opts": {
 --       "template": "Summarize the following text.\n\nText:\n\"\"\"\n{{input}}\n\"\"\"\n\nSummary:",
 --       "params": {
---         "model": "mistral:7b"
+--         "model": "neural-chat:7b"
 --       }
 --     }
 --   }

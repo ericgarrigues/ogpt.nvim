@@ -93,12 +93,12 @@ https://github.com/huynle/ogpt.nvim/blob/81b5e189a044cb9c035b0e9b5e1ad0f2e03c440
 Plugin exposes following commands:
 
 #### `OGPT`
-`OGPT` command which opens interactive window using the `mistral:7b`
+`OGPT` command which opens interactive window using the `neural-chat:7b`
 model.
 (also known as `OGPT`)
 
 #### `OGPTActAs`
-`OGPTActAs` command which opens a prompt selection from [Awesome OGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) to be used with the `mistral:7b` model.
+`OGPTActAs` command which opens a prompt selection from [Awesome OGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) to be used with the `neural-chat:7b` model.
 
 ![preview image](https://github.com/jackmort/ChatGPT.nvim/blob/media/preview-3.png?raw=true)
 
@@ -150,7 +150,7 @@ wk.register({
   10. `roxygen_edit`
   11. `code_readability_analysis` -- see [demo](https://youtu.be/zlU3YGGv2zY)
 
-All the above actions are using `mistral:7b` model.
+All the above actions are using `neural-chat:7b` model.
 
 It is possible to define custom actions with a JSON file. See [`actions.json`](./lua/ogpt/flows/actions/actions.json) for an example. The path of custom actions can be set in the config (see `actions_paths` field in the config example above).
 
@@ -163,7 +163,7 @@ An example of custom action may look like this: (`#` marks comments)
       "template": "A template using possible variable: {{filetype}} (neovim filetype), {{input}} (the selected text) an {{argument}} (provided on the command line)",
       "strategy": "replace", # or "display" or "append" or "edit"
       "params": { # parameters according to the official Ollama API
-        "model": "mistral:7b", # or any other model supported by `"type"` in the Ollama API, use the playground for reference
+        "model": "neural-chat:7b", # or any other model supported by `"type"` in the Ollama API, use the playground for reference
         "stop": [
           "```" # a string used to stop the model
         ]
